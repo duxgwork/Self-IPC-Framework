@@ -4,8 +4,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
-
-import com.github.kevin.baselib.ProcessManager;
+import com.github.kevin.baselib.manager.IUserManager;
+import com.github.kevin.baselib.manager.ProcessManager;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
     public void getPerson(View view) {
         IUserManager userManager = ProcessManager.getInstance().getInstance(IUserManager.class);
         Toast.makeText(this, "====>"+ userManager.getPerson(),Toast.LENGTH_SHORT).show();
-
     }
+
+
 }

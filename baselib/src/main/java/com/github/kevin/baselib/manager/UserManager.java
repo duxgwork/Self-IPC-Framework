@@ -1,4 +1,4 @@
-package com.github.kevin.processframework;
+package com.github.kevin.baselib.manager;
 
 
 import com.github.kevin.baselib.bean.Person;

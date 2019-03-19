@@ -1,4 +1,4 @@
-package com.github.kevin.baselib;
+package com.github.kevin.baselib.utils;
 
 import android.os.Build;
 import android.support.annotation.RequiresApi;

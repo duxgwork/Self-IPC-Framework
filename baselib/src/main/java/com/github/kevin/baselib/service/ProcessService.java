@@ -1,16 +1,17 @@
-package com.github.kevin.baselib;
+package com.github.kevin.baselib.service;
 
 import android.app.Service;
 import android.content.Intent;
 import android.os.Build;
 import android.os.IBinder;
 import android.os.RemoteException;
-import android.os.UserManager;
 import android.support.annotation.Nullable;
 import android.support.annotation.RequiresApi;
 
+import com.github.kevin.baselib.ProcessInterface;
 import com.github.kevin.baselib.bean.RequestBean;
 import com.github.kevin.baselib.bean.RequestParameter;
+import com.github.kevin.baselib.utils.CacheCenter;
 import com.google.gson.Gson;
 
 import java.lang.reflect.InvocationTargetException;

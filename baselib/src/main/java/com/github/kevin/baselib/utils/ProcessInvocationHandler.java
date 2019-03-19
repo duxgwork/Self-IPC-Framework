@@ -1,7 +1,9 @@
-package com.github.kevin.baselib;
+package com.github.kevin.baselib.utils;
 
 import android.text.TextUtils;
 
+import com.github.kevin.baselib.manager.ProcessManager;
+import com.github.kevin.baselib.service.ProcessService;
 import com.google.gson.Gson;
 
 import java.lang.reflect.InvocationHandler;

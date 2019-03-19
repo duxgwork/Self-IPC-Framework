@@ -1,4 +1,4 @@
-package com.github.kevin.baselib;
+package com.github.kevin.baselib.manager;
 
 import android.content.ComponentName;
 import android.content.Context;
@@ -10,9 +10,13 @@ import android.os.RemoteException;
 import android.support.annotation.RequiresApi;
 import android.text.TextUtils;
 
+import com.github.kevin.baselib.utils.CacheCenter;
+import com.github.kevin.baselib.ProcessInterface;
+import com.github.kevin.baselib.service.ProcessService;
 import com.github.kevin.baselib.annotion.ClassId;
 import com.github.kevin.baselib.bean.RequestBean;
 import com.github.kevin.baselib.bean.RequestParameter;
+import com.github.kevin.baselib.utils.ProcessInvocationHandler;
 import com.google.gson.Gson;
 
 import java.lang.reflect.Method;

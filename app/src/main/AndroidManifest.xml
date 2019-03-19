@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activities.MainActivity">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -18,12 +18,12 @@
         </activity>
 
         <activity
-            android:name=".activities.SecondActivity"
+            android:name=".SecondActivity"
             android:process=":process2" />
 
-        <service android:name="com.github.kevin.baselib.ProcessService">
+        <service android:name="com.github.kevin.baselib.service.ProcessService">
             <intent-filter>
-                <action android:name="com.github.kevin.baselib.ProcessService" />
+                <action android:name="com.github.kevin.baselib.service.ProcessService" />
             </intent-filter>
 
         </service>

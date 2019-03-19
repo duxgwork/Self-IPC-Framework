@@ -1,9 +1,9 @@
-package com.github.kevin.mouldb;
+package com.github.kevin.baselib.manager;
 
 import com.github.kevin.baselib.annotion.ClassId;
 import com.github.kevin.baselib.bean.Person;
 
-@ClassId("com.github.kevin.processframework.UserManager")
+@ClassId("com.github.kevin.baselib.manager.UserManager")
 public interface IUserManager {
 
     Person getPerson();

@@ -3,21 +3,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
     android:orientation="vertical"
-    tools:context=".activities.SecondActivity">
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:onClick="userManager"
-        android:text="得到对象"/>
+    tools:context=".SecondActivity">
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:onClick="getUser"
-        android:text="得到getUse消息"/>
+        android:text="得到getUser消息"/>
 
 </LinearLayout>
