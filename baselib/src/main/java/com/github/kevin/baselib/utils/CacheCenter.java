@@ -12,11 +12,11 @@ public class CacheCenter {
     private HashMap<Class<?>, HashMap<String, Method>> mMethods = new HashMap<>();
     private HashMap<String, Object> mObjects = new HashMap<>();
 
-    public CacheCenter(){
+    private CacheCenter(){
 
     }
 
-    private static final CacheCenter instance = new CacheCenter();
+    private static CacheCenter instance = new CacheCenter();
 
     public static CacheCenter getInstance(){
         return instance;

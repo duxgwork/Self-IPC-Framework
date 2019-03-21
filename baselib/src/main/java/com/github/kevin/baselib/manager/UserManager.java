@@ -4,17 +4,21 @@ package com.github.kevin.baselib.manager;
 import com.github.kevin.baselib.bean.Person;
 
 public class UserManager implements IUserManager{
-    private static UserManager instance = null;
+    private static volatile UserManager instance = null;
     private Person person;
 
-    public UserManager(){
+    private UserManager(){
 
     }
 
     //架构约束
     public static synchronized UserManager getInstance(){
         if (instance == null){
-            instance = new UserManager();
+            synchronized (UserManager.class){
+                if (instance == null){
+                    instance = new UserManager();
+                }
+            }
         }
         return instance;
     }

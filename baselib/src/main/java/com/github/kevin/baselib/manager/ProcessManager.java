@@ -104,6 +104,7 @@ public class ProcessManager {
 
         @Override
         public void onServiceConnected(ComponentName name, IBinder service) {
+            //得到一个ProcessInterface接口实例
             mProcessInterface = ProcessInterface.Stub.asInterface(service);
         }
 
